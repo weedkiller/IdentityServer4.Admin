@@ -66,5 +66,32 @@ namespace Skoruba.IdentityServer4.Admin.BusinessLogic.Resources
                 Description = ApiResourceServiceResource.ApiSecretDoesNotExist
             };
         }
+
+        public virtual ResourceMessage ApiResourcePropertyDoesNotExist()
+        {
+            return new ResourceMessage()
+            {
+                Code = nameof(ApiResourcePropertyDoesNotExist),
+                Description = ApiResourceServiceResource.ApiResourcePropertyDoesNotExist
+            };
+        }
+
+        public virtual ResourceMessage ApiResourcePropertyExistsKey()
+        {
+            return new ResourceMessage()
+            {
+                Code = nameof(ApiResourcePropertyExistsKey),
+                Description = ApiResourceServiceResource.ApiResourcePropertyExistsKey
+            };
+        }
+
+        public virtual ResourceMessage ApiResourcePropertyExistsValue()
+        {
+            return new ResourceMessage()
+            {
+                Code = nameof(ApiResourcePropertyExistsValue),
+                Description = ApiResourceServiceResource.ApiResourcePropertyExistsValue
+            };
+        }
     }
 }
